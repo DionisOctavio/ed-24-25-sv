@@ -9,7 +9,7 @@ public class Lavadora {
     private int contadorTiempoLavado;
     private String estadoLavado;
     private String puerta;
-    private String pantalla
+    private String pantalla;
     private int revolucionPorMinuto;
     private int temperaturaAgua;
     private String cajetin;
@@ -26,7 +26,10 @@ public class Lavadora {
     }
 
     // Metodos
-    public void encender(){}
+    public void encender(Lavadora lavadora){
+        if ()
+
+    }
 
     public void apagar(){}
 
