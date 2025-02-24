@@ -1,7 +1,4 @@
-import pojo.Poligono;
-import pojo.Punto2D;
-import pojo.Segmento;
-import pojo.Triangulo;
+import pojo.*;
 
 import java.util.Scanner;
 
@@ -22,7 +19,20 @@ public class Main {
 
         TRIANGULO1.imprimirPoligono();
 
+        Punto2D P4 = new Punto2D(2, 1);
+        Punto2D P5 = new Punto2D(6, 1);
+        Punto2D P6 = new Punto2D(6, 5);
+        Punto2D P7 = new Punto2D(2, 5);
 
+
+        Segmento S4 = new Segmento(P4, P5);
+        Segmento S5 = new Segmento(P5, P6);
+        Segmento S6 = new Segmento(P6, P7);
+        Segmento S7 = new Segmento(P7, P4);
+
+        Cuadrado CUADRADO1 = new Cuadrado("CUAD1", 4, S4,S5,S6,S7);
+
+        CUADRADO1.imprimirPoligono();
 
     }
 }

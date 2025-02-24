@@ -35,11 +35,9 @@ public class Triangulo extends Poligono {
         return valid1 && valid2 && valid3;
     }
 
+    @Override
     public void imprimirPoligono() {
-        System.out.println(this.getNombre());
-        System.out.println("Segmento 1: Punto1 = " + segmento1.getPunto1() + ", Punto2 = " + segmento1.getPunto2());
-        System.out.println("Segmento 2: Punto1 = " + segmento2.getPunto1() + ", Punto2 = " + segmento2.getPunto2());
-        System.out.println("Segmento 3: Punto1 = " + segmento3.getPunto1() + ", Punto2 = " + segmento3.getPunto2());
+        super.imprimirPoligono();
     }
 
     @Override

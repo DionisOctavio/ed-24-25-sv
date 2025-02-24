@@ -26,6 +26,16 @@ public abstract class Poligono {
                 '}';
     }
 
+    public void imprimirPoligono(){
+        System.out.println(this.getNombre());
+        int contador = 0;
+
+        for (Segmento segmento : segmentos){
+            System.out.println("Segmento " + (contador + 1) + ": Punto1 = " + segmento.getPunto1() + ", Punto2 = " + segmento.getPunto2());
+            contador++;
+        }
+    }
+
     public String getNombre() {
         return nombre;
     }
