@@ -21,4 +21,11 @@ public class Punto3d extends Punto {
     public void setZ(int z) {
         this.z = z;
     }
+
+    public int getX() {
+
+        return super.getX();
+
+    }
+
 }

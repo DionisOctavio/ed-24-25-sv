@@ -18,7 +18,9 @@ public class Main {
     P2.setY(5);
     P2.setZ(6);
 
-    System.out.println("Punto: " + P2.getX() + " " + P2.getY() + " " + P2.getZ());q2a2awa1º
+    System.out.println("Punto: " + P2.getX() + " " + P2.getY() + " " + P2.getZ());
+
+    int x = P2.getX();
 
     }
 }
