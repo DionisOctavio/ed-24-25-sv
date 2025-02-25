@@ -34,5 +34,14 @@ public class Main {
 
         CUADRADO1.imprimirPoligono();
 
+
+        Punto2D P8 = new Punto2D(2, 8);
+
+
+
+
+        Rectangulo RECTANGULO1 = new Rectangulo();
+
+
     }
 }

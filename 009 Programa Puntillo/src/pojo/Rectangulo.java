@@ -1,13 +1,14 @@
 package pojo;
 
-public class Cuadrado extends Poligono {
+public class Rectangulo extends Poligono {
 
-    private Segmento segmento1, segmento2, segmento3, segmento4;
+    private Segmento segmento1, segmento2, segmento3, segmento4 ;
 
+    public Rectangulo(String nombre, int numeroSegmentos ) {
 
-    public Cuadrado(String nombre, int numeroSegmentos, Segmento segmento1, Segmento segmento2, Segmento segmento3, Segmento segmento4) {
         super(nombre, numeroSegmentos);
-        if (validarSegmentos(segmento1, segmento2, segmento3, segmento4) && comprobarMedidasSegmentos(segmento1, segmento2, segmento3, segmento4)) {
+
+        if (validarSegmentos(segmento1, segmento2, segmento3, segmento4)) {
 
             this.segmento1 = segmento1;
             this.segmento2 = segmento2;
@@ -41,28 +42,6 @@ public class Cuadrado extends Poligono {
         return valid1 && valid2 && valid3 && valid4;
     }
 
-    private boolean comprobarMedidasSegmentos(Segmento s1, Segmento s2, Segmento s3, Segmento s4) {
-        int dx1 = (s1.getPunto1().getX() - s1.getPunto2().getX());
-        int dy1 = (s1.getPunto1().getY() - s1.getPunto2().getY());
-
-        int dx2 = (s2.getPunto1().getX() - s2.getPunto2().getX());
-        int dy2 = (s2.getPunto1().getY() - s2.getPunto2().getY());
-
-        int dx3 = (s3.getPunto1().getX() - s3.getPunto2().getX());
-        int dy3 = (s3.getPunto1().getY() - s3.getPunto2().getY());
-
-        int dx4 = (s4.getPunto1().getX() - s4.getPunto2().getX());
-        int dy4 = (s4.getPunto1().getY() - s4.getPunto2().getY());
-
-        boolean checkSegmento1 = (dx1 * dx1 + dy1 * dy1) == (dx2 * dx2 + dy2 * dy2);
-
-        boolean checkSegmento2 = (dx2 * dx2 + dy2 * dy2) == (dx3 * dx3 + dy3 * dy3);
-
-        boolean checkSegmento3 = (dx3 * dx3 + dy3 * dy3) == (dx4 * dx4 + dy4 * dy4);
-
-        return checkSegmento1 && checkSegmento2 && checkSegmento3;
-    }
-
     @Override
     public void imprimirPoligono() {
         super.imprimirPoligono();
@@ -70,7 +49,7 @@ public class Cuadrado extends Poligono {
 
     @Override
     public String toString() {
-        return "Cuadrado{" +
+        return "Rectangulo{" +
                 "segmento1=" + segmento1 +
                 ", segmento2=" + segmento2 +
                 ", segmento3=" + segmento3 +
