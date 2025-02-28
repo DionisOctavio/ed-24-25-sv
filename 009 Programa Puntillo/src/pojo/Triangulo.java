@@ -22,6 +22,11 @@ public class Triangulo extends Poligono {
         }
     }
 
+    @Override
+    public void imprimirPoligono() {
+        super.imprimirPoligono();
+    }
+
     private boolean validarSegmentos(Segmento s1, Segmento s2, Segmento s3) {
         boolean valid1 = s1.getPunto1().equals(s2.getPunto1()) || s1.getPunto1().equals(s2.getPunto2()) ||
                 s1.getPunto2().equals(s2.getPunto1()) || s1.getPunto2().equals(s2.getPunto2());
@@ -33,11 +38,6 @@ public class Triangulo extends Poligono {
                 s3.getPunto2().equals(s1.getPunto1()) || s3.getPunto2().equals(s1.getPunto2());
 
         return valid1 && valid2 && valid3;
-    }
-
-    @Override
-    public void imprimirPoligono() {
-        super.imprimirPoligono();
     }
 
     @Override

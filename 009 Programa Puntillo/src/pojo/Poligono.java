@@ -18,14 +18,6 @@ public abstract class Poligono {
         this.segmentos.add(segmento);
     }
 
-    @Override
-    public String toString() {
-        return "Poligono{" +
-                "nombre='" + nombre + '\'' +
-                ", segmentos=" + segmentos +
-                '}';
-    }
-
     public void imprimirPoligono(){
         System.out.println(this.getNombre());
         int contador = 0;
@@ -34,6 +26,15 @@ public abstract class Poligono {
             System.out.println("Segmento " + (contador + 1) + ": Punto1 = " + segmento.getPunto1() + ", Punto2 = " + segmento.getPunto2());
             contador++;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Poligono{" +
+                "nombre='" + nombre + '\'' +
+                ", numeroSegmentos=" + numeroSegmentos +
+                ", segmentos=" + segmentos +
+                '}';
     }
 
     public String getNombre() {

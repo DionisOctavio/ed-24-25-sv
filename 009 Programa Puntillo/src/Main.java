@@ -10,7 +10,6 @@ public class Main {
         Punto2D P2 = new Punto2D(5, 7);
         Punto2D P3 = new Punto2D(4, 4);
 
-
         Segmento S1 = new Segmento(P1, P2);
         Segmento S2 = new Segmento(P2, P3);
         Segmento S3 = new Segmento(P3, P1);
@@ -24,7 +23,6 @@ public class Main {
         Punto2D P6 = new Punto2D(6, 5);
         Punto2D P7 = new Punto2D(2, 5);
 
-
         Segmento S4 = new Segmento(P4, P5);
         Segmento S5 = new Segmento(P5, P6);
         Segmento S6 = new Segmento(P6, P7);
@@ -34,14 +32,7 @@ public class Main {
 
         CUADRADO1.imprimirPoligono();
 
-
         Punto2D P8 = new Punto2D(2, 8);
-
-
-
-
-        Rectangulo RECTANGULO1 = new Rectangulo();
-
 
     }
 }
