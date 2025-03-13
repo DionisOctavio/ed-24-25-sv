@@ -22,7 +22,6 @@ public class Cuadrado extends Poligono {
         } else {
             System.out.println("Segmento repetido o Medida de segmento invalida");
         }
-
     }
 
     private boolean validarSegmentos(Segmento s1, Segmento s2, Segmento s3, Segmento s4) {
